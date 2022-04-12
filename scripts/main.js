@@ -24,19 +24,19 @@
    * Navbar effects and scrolltop buttons upon scrolling
    */
   const navbar = document.getElementById("header-nav");
-  var body = document.getElementsByTagName("body")[0];
+  // var body = document.getElementsByTagName("body")[0];
   const scrollTop = document.getElementById("scrolltop");
   window.onscroll = () => {
     if (window.scrollY > 0) {
       navbar.classList.add("fixed-top", "shadow-sm", "navbar-light");
       // body.style.paddingTop = navbar.offsetHeight + "px"
-      // scrollTop.style.visibility = "visible";
-      // scrollTop.style.opacity = 1;
+      scrollTop.style.visibility = "visible";
+      scrollTop.style.opacity = 1;
     } else {
       navbar.classList.remove("fixed-top", "shadow-sm", "navbar-light");
       // body.style.paddingTop = "0px"
-      // scrollTop.style.visibility = "hidden";
-      // scrollTop.style.opacity = 0;
+      scrollTop.style.visibility = "hidden";
+      scrollTop.style.opacity = 0;
     }
   };
 
@@ -141,7 +141,6 @@ function enableScroll() {
   let overlay = document.querySelector(".overlay");
   let headerNav = document.querySelector(".header-nav");
   btnToggler.addEventListener("click", () => {
-    console.log(togglerIcon);
     if (btnToggler.classList.contains("not-open")) {
       disableScroll()
       navbar.classList.add("shadow-sm", "navbar-light", "bg-white");
@@ -152,10 +151,13 @@ function enableScroll() {
     } else {
       navbar.classList.remove("shadow-sm", "navbar-light", "bg-white");
       enableScroll()
-      headerNav.style.zIndex = "2";
+      headerNav.style.zIndex = "3";
       btnToggler.classList.add("not-open");
       togglerIcon.classList.remove("fa-times");
       overlay.style.display = "none";
     }
   });
+  overlay.addEventListener("click", ()=>{
+    btnToggler.click()
+  })
 })();
