@@ -1,0 +1,22 @@
+body {
+  padding-top: 90px;
+}
+@media (max-width:991px) {
+  body{
+    padding-top: 58px;
+  }
+}
+header.bg-light{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 ;
+}
+@media (max-width: 575.98px) {
+  .hello:first-child{
+    text-align: center;
+  }
+  .hello .marker:after{
+    left: 70%;
+  }
+}
