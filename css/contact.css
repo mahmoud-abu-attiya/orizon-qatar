@@ -1,0 +1,83 @@
+body {
+  padding-top: 90px;
+}
+@media (max-width: 991px) {
+  body {
+    padding-top: 58px;
+  }
+}
+#content{
+  position: relative;
+  overflow: hidden;
+  max-width: 100vw;
+}
+.ab-four , .ab-five{
+  border-radius: 50%;
+  min-width: 100px;
+  z-index: -1;
+}
+.ab-four{
+  top: -6%;
+  right: -10%;
+}
+@media (max-width:767px) {
+  .ab-four{
+    top: -1%;
+    right: -15%;
+  }
+}
+.ab-five{
+  top: 20%;
+  left: -15%;
+}
+@media (max-width:767px) {
+  .ab-five{
+    display: none;
+  }
+}
+form{
+  max-width: 900px;
+  margin: auto;
+  border-radius: 1rem;
+}
+.anotherW{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.anotherW .w{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.anotherW .w img{
+  width: 100%;
+}
+@media (max-width:767px) {
+  .anotherW .w img{
+    width: 60%;
+    margin: auto;
+  }
+  .anotherW{
+    width: 80%;
+    margin: auto;
+  }
+}
+.anotherW .w .info .social{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.anotherW .w .info .social a{
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.3rem;
+  border-radius: 50%;
+}
+.anotherW .w .info .social a i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
