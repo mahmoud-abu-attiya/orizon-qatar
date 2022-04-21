@@ -1,0 +1,28 @@
+#content header{
+  background-image: url("../images/illustrations/zoomin.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hello{
+  /* display: flex; */
+  max-width: 500px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.hello p{
+  color: #000;
+  font-weight: bold;
+}
+.logo-container{
+  max-width: 400px;
+  padding: 0 10px;
+  margin: auto;
+}
+.logo-container img{
+  width: 100%;
+}
