@@ -9,3 +9,16 @@ setInterval(() => {
     i = 0;
   }
 }, 7000);
+
+
+let dd = document.querySelectorAll("#dd .dd")
+let e = 0;
+setInterval(() => {
+  dd.forEach((d) => {
+    d.classList.remove("change")
+  });
+  dd[e++].classList.add("change")
+  if(e >= 9){
+    e = 0;
+  }
+}, 7000);

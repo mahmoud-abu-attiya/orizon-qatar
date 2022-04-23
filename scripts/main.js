@@ -34,6 +34,8 @@
     });
   }
 
+const navbar = document.getElementById("header-nav");
+
   /**
    * Big Picture Popup for images and videos
    */
@@ -142,13 +144,13 @@
   btnToggler.addEventListener("click", () => {
     if (btnToggler.classList.contains("not-open")) {
       disableScroll();
-      navbar.classList.add("shadow-sm", "navbar-light", "bg-white");
+      navbar.classList.add("shadow-sm", "bg-white");
       headerNav.style.zIndex = "11";
       btnToggler.classList.remove("not-open");
       togglerIcon.classList.add("fa-times");
       overlay.style.display = "block";
     } else {
-      navbar.classList.remove("shadow-sm", "navbar-light", "bg-white");
+      navbar.classList.remove("shadow-sm", "bg-white");
       enableScroll();
       headerNav.style.zIndex = "3";
       btnToggler.classList.add("not-open");
