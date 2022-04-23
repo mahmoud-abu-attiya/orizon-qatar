@@ -14,9 +14,9 @@
       anchorPlacement: "top-left",
       duration: 600,
       easing: "ease-in-out",
-      once: true,
+      once: false,
       mirror: false,
-      disable: "mobile",
+      disable: false,
     });
   }
 

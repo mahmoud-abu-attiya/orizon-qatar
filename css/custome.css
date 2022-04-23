@@ -1,6 +1,13 @@
 :root {
   --ycolor--: #f2ba35;
 }
+.section{
+  position: relative;
+  overflow: hidden;
+}
+.bd{
+  border: 2px solid var(--ycolor--);
+}
 .absolute {
   position: absolute;
   width: 20vw;
@@ -13,10 +20,6 @@
     var(--ycolor--),
     #ffff00
   );
-}
-.section{
-  position: relative;
-  overflow: hidden;
 }
 /* .ab-one{
   z-index: -1;
