@@ -150,7 +150,7 @@ const navbar = document.getElementById("header-nav");
       togglerIcon.classList.add("fa-times");
       overlay.style.display = "block";
     } else {
-      navbar.classList.remove("shadow-sm", "bg-white");
+      navbar.classList.remove("shadow-sm","navbar-dark", "bg-white");
       enableScroll();
       headerNav.style.zIndex = "3";
       btnToggler.classList.add("not-open");
