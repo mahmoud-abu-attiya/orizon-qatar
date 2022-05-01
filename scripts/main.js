@@ -34,8 +34,6 @@
     });
   }
 
-const navbar = document.getElementById("header-nav");
-
   /**
    * Big Picture Popup for images and videos
    */
@@ -88,77 +86,28 @@ const navbar = document.getElementById("header-nav");
 
   // Add your javascript here
 
-  // left: 37, up: 38, right: 39, down: 40,
-  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-  var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
-  function preventDefault(e) {
-    e.preventDefault();
-  }
-
-  function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-      preventDefault(e);
-      return false;
-    }
-  }
-
-  // modern Chrome requires { passive: false } when adding event
-  var supportsPassive = false;
-  try {
-    window.addEventListener(
-      "scroll",
-      null,
-      Object.defineProperty({}, "passive", {
-        get: function () {
-          supportsPassive = true;
-        },
-      })
-    );
-  } catch (e) {}
-
-  var wheelOpt = supportsPassive ? { passive: false } : false;
-  var wheelEvent =
-    "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
-
-  // call this to Disable
-  function disableScroll() {
-    window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
-    window.addEventListener("keydown", preventDefaultForScrollKeys, false);
-  }
-
-  // call this to Enable
-  function enableScroll() {
-    window.removeEventListener("DOMMouseScroll", preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-    window.removeEventListener("touchmove", preventDefault, wheelOpt);
-    window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
-  }
-
-  let btnToggler = document.querySelector(".navbar-toggler");
-  let togglerIcon = btnToggler.querySelector("i");
-  let overlay = document.querySelector(".overlay");
-  let headerNav = document.querySelector(".header-nav");
-  btnToggler.addEventListener("click", () => {
-    if (btnToggler.classList.contains("not-open")) {
-      disableScroll();
-      navbar.classList.add("shadow-sm", "bg-white");
-      headerNav.style.zIndex = "11";
-      btnToggler.classList.remove("not-open");
-      togglerIcon.classList.add("fa-times");
-      overlay.style.display = "block";
-    } else {
-      navbar.classList.remove("shadow-sm","navbar-dark", "bg-white");
-      enableScroll();
-      headerNav.style.zIndex = "3";
-      btnToggler.classList.add("not-open");
-      togglerIcon.classList.remove("fa-times");
-      overlay.style.display = "none";
-    }
+  const sm = document.querySelector("nav .social-media");
+  const csm = document.querySelector("nav .social-media .csm");
+  const smas = document.querySelectorAll("nav .social-media a");
+  const sidebar = document.querySelector("aside");
+  const openbar = document.querySelector("aside .openbar");
+  const closebar = document.querySelector("aside .closebar");
+  sm.onmousemove = () => {
+    csm.classList.add("show_social_media");
+    smas.forEach((sma) => {
+      sma.classList.add("show_social_media_a");
+    });
+  };
+  sm.onmouseleave = () => {
+    smas.forEach((sma) => {
+      sma.classList.remove("show_social_media_a");
+    });
+    csm.classList.remove("show_social_media");
+  };
+  openbar.addEventListener("click", () => {
+    sidebar.classList.add("open_aside");
   });
-  overlay.addEventListener("click", () => {
-    btnToggler.click();
+  closebar.addEventListener("click", () => {
+    sidebar.classList.remove("open_aside");
   });
 })();
