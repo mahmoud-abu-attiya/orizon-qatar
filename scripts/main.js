@@ -110,4 +110,59 @@
   closebar.addEventListener("click", () => {
     sidebar.classList.remove("open_aside");
   });
+
+
+  // send email
+  function formSubmit(){
+    let inpName = document.querySelector("#validationCustom01")
+    let inpEmail = document.querySelector("#validationCustomEmail")
+    let inpCompany = document.querySelector("#validationCustom03")
+    let inpMsg = document.querySelector("#floatingTextarea2")
+    let inpState = document.querySelector("#validationCustom04")
+    let myState = {
+        name: inpName.value,
+        email: inpEmail.value,
+        company: inpCompany.value,
+        service: inpState.value,
+        msg: inpMsg.value,
+    }
+    function sweetalert(){
+      swal("Thanks!", "We will contact you as soon as possible.", "success")
+      inpCompany.value = ''
+      inpEmail.value = ''
+      inpMsg.value = ''
+      inpName.value = ''
+      inpState.value = ''
+    }
+    fetch('https://formsubmit.co/ajax/mahmoudabuattiya106@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(myState)
+    })
+    .then(sweetalert())
+  }
+  let forms = document.querySelectorAll("form")
+  forms.forEach(form => {
+    form.addEventListener("submit" , (e)=>{
+      e.preventDefault();
+      formSubmit();
+    })
+  })
+
+  // form popup
+  let fromPopup = document.querySelector(".form-popup-container")
+  let canselForm = document.querySelector(".cansel-form-popup")
+  let openForm = document.querySelectorAll(".open-form-popup")
+  let formOverlay = document.querySelector(".form-popup-overlay")
+  openForm.forEach(btn => {
+    btn.addEventListener("click",()=>{
+      fromPopup.style.display = "grid"
+    })
+  })
+  canselForm.addEventListener("click",()=>{
+    fromPopup.style.display = "none"
+  })
+  formOverlay.addEventListener("click",()=>{
+    canselForm.click()
+  })
 })();

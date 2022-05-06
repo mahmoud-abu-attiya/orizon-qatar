@@ -1,11 +1,3 @@
-body {
-  padding-top: 90px;
-}
-@media (max-width: 991px) {
-  body {
-    padding-top: 58px;
-  }
-}
 #content{
   position: relative;
   overflow: hidden;

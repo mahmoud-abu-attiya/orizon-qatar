@@ -392,6 +392,52 @@ video#id_video {
 
 /* //////////////////////////////// end testimonials ////////////////////// */
 
+/* //////////////////////////////// start form popup ////////////////////// */
+
+.form-popup-container{
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  place-content: center;
+}
+.form-popup-container .form-popup-overlay{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.form-popup-container .form-popup{
+  border-radius: 15px;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  margin: auto;
+  max-width: 700px;
+}
+.form-popup-container .form-popup .cansel-form-popup{
+  position: absolute;
+  width: fit-content;
+  right: 10px;
+  top: -30px;
+  padding: 13px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+
+/* //////////////////////////////// end form popup ////////////////////// */
+
 /* //////////////////////////////// start footer ////////////////////// */
 
 .footer-logo {
