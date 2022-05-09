@@ -301,7 +301,7 @@ aside .aside_links ul{
 }
 aside .aside_links ul li{
   list-style: none;
-  font-size: clamp(30px,4vw,40px);
+  font-size: clamp(20px,4vw,40px);
   font-weight: bold;
   white-space: nowrap;
   transition: 0.3s;
@@ -347,7 +347,7 @@ aside .aside_footer span{
     height: 100%;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
   }
   aside .aside_info{
     display: flex;
@@ -360,6 +360,10 @@ aside .aside_footer span{
   }
   aside .aside_info > a{
     margin: 15px 0;
+  }
+  aside .aside_links {
+    padding: 20px;
+    padding-bottom: 60px;
   }
   aside .aside_footer{
     padding: 10px 0;
