@@ -86,9 +86,9 @@
 
   // Add your javascript here
 
-  const sm = document.querySelector("nav .social-media");
-  const csm = document.querySelector("nav .social-media .csm");
-  const smas = document.querySelectorAll("nav .social-media a");
+  const sm = document.querySelector(".social-media-fix");
+  const csm = document.querySelector(".social-media-fix .csm");
+  const smas = document.querySelectorAll(".social-media-fix a");
   const sidebar = document.querySelector("aside");
   const openbar = document.querySelector("aside .openbar");
   const closebar = document.querySelector("aside .closebar");
@@ -165,4 +165,37 @@
   formOverlay.addEventListener("click",()=>{
     canselForm.click()
   })
+
+  // loading
+  let loading = document.querySelector(".loading")
+  let home = document.getElementById("homeLink")
+  let services = document.getElementById("servicesLink")
+  let work = document.getElementById("workLink")
+  let about = document.getElementById("aboutLink")
+  let contact = document.getElementById("contactLink")
+  window.addEventListener("load", ()=>{
+    loading.style.display = "none"
+
+    console.log(window.location.pathname)
+    if(window.location.pathname == "/"){
+      home.parentNode.classList.add("page-active")
+      console.log("we in home");
+    } else if(window.location.pathname == "/services.html"){
+      services.parentNode.classList.add("page-active")
+      console.log("we in services");
+    } else if(window.location.pathname == "/work.html"){
+      work.parentNode.classList.add("page-active")
+      console.log("we in work");
+    } else if(window.location.pathname == "/about.html"){
+      about.parentNode.classList.add("page-active")
+      console.log("we in about");
+    } else if(window.location.pathname == "/contact.html") {
+      contact.parentNode.classList.add("page-active")
+      console.log("we in contact");
+    } else {
+      home.parentNode.classList.add("page-active")
+      console.log("we in home");
+    }
+  })
+
 })();
