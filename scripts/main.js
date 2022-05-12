@@ -176,26 +176,26 @@
   window.addEventListener("load", ()=>{
     loading.style.display = "none"
 
-    console.log(window.location.pathname)
-    if(window.location.pathname == "/"){
-      home.parentNode.classList.add("page-active")
-      console.log("we in home");
-    } else if(window.location.pathname == "/services.html"){
-      services.parentNode.classList.add("page-active")
-      console.log("we in services");
-    } else if(window.location.pathname == "/work.html"){
-      work.parentNode.classList.add("page-active")
-      console.log("we in work");
-    } else if(window.location.pathname == "/about.html"){
-      about.parentNode.classList.add("page-active")
-      console.log("we in about");
-    } else if(window.location.pathname == "/contact.html") {
-      contact.parentNode.classList.add("page-active")
-      console.log("we in contact");
-    } else {
-      home.parentNode.classList.add("page-active")
-      console.log("we in home");
-    }
+    // console.log(window.location.pathname)
+    // if(window.location.pathname == "/"){
+    //   home.parentNode.classList.add("page-active")
+    //   console.log("we in home");
+    // } else if(window.location.pathname == "/services.html"){
+    //   services.parentNode.classList.add("page-active")
+    //   console.log("we in services");
+    // } else if(window.location.pathname == "/work.html"){
+    //   work.parentNode.classList.add("page-active")
+    //   console.log("we in work");
+    // } else if(window.location.pathname == "/about.html"){
+    //   about.parentNode.classList.add("page-active")
+    //   console.log("we in about");
+    // } else if(window.location.pathname == "/contact.html") {
+    //   contact.parentNode.classList.add("page-active")
+    //   console.log("we in contact");
+    // } else {
+    //   home.parentNode.classList.add("page-active")
+    //   console.log("we in home");
+    // }
   })
 
 })();

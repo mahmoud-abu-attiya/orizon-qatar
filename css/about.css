@@ -1,28 +1,104 @@
+:root {
+  --ycolor--: #f2ba35;
+  --secondary--: #3d052e;
+  --light--: #f2f2f2
+}
+
 #content header{
-  background-image: url("../images/illustrations/zoomin.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  position: relative;
+  background-image: linear-gradient(to top, var(--ycolor--) 60%, #8f6d1f);
+}
+.zena{
+  position: absolute;
+  transition: 2s;
+}
+#content header .zena img{
+  width: 100%;
+}
+#content header .z1{
+  width: 45%;
+  min-width: 300px;
+  max-width: 650px;
+  top: -160px;
+  right: -157px;
+  filter: drop-shadow(0px -21px 29px rgba(0, 0, 0, 0.4));
+  z-index: 3;
+  transform: translate(100% , 0);
+}
+#content header .z2{
+  width: 10%;
+  max-width: 200px;
+  min-width: 100px;
+  top: -20px;
+  right: 32%;
+  filter: drop-shadow(0px -21px 29px rgba(0, 0, 0, 0.4));
+  z-index: 2;
+  transform: translate(0, -100%);
+}
+#content header .z3{
+  width: 5%;
+  max-width: 80px;
+  min-width: 50px;
+  top: 30%;
+  left: 160px;
+  filter: drop-shadow(-5px -22px 9px rgba(0, 0, 0, 0.4));
+  transform: translate(-300% , -300%)
+}
+#content header .z4{
+  width: 30%;
+  bottom: 0;
+  right: 10px;
+  max-width: 470px;
+  min-width: 300px;
+  transform: translate(100% , 100%);
+}
+@media (max-width:767px) {
+  #content header .z1{
+    top: -34px;
+    right: -134px;
+  }
+  #content header .z2{
+    right: 170px;
+    top: -10px;
+  }
+  #content header .z3{
+    right: 170px;
+    top: 20%;
+  }
 }
 .hello{
-  /* display: flex; */
-  max-width: 500px;
+  z-index: 4;
+  max-width: 700px;
   margin-bottom: 30px;
   text-align: center;
 }
 .hello p{
-  color: #000;
+  color: #fff;
   font-weight: bold;
+  color: var(--secondary--);
+  z-index: 2;
+  position: relative;
+  margin: 0 27px;
 }
 .logo-container{
-  max-width: 400px;
+  max-width: 600px;
   padding: 0 10px;
   margin: auto;
+  position: relative;
 }
 .logo-container img{
   width: 100%;
+}
+.logo-container .z5{
+  z-index: 1;
+  bottom: -78%;
+  width: 45%;
+  left: -23%;
+  transform: translate(-350%,0);
+}
+.z-ani{
+  transform: translate(0 ,0) !important;
 }
