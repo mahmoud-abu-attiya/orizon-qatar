@@ -19,12 +19,12 @@ body{
   min-width: 50px;
   aspect-ratio: 1/1;
   z-index: 1;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     45deg,
     var(--ycolor--),
     var(--ycolor--),
     #ffff00
-  );
+  ); */
 }
 .ab-two {
   top: 20px;
@@ -37,6 +37,32 @@ body{
   left: 98%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  animation: ab-ani infinite 5s;
+  /* transform: translate(50px , 50px); */
+
+}
+.ab-two img , .ab-three img {
+  width: 100%;
+}
+@keyframes ab-ani {
+  0%{
+    transform: translate(-50% , -50%);
+  }
+  20%{
+    transform: translate(-60% , -55%);
+  }
+  40%{
+    transform: translate(-65% , -60%);
+  }
+  60%{
+    transform: translate(-70% , -65%);
+  }
+  80%{
+    transform: translate(-60% , -55%);
+  }
+  100%{
+    transform: translate(-50% , -50%);
+  }
 }
 .overlay {
   position: fixed;
@@ -107,20 +133,6 @@ body{
 
 /* ////////////////////////////////// start navbar /////////////////////////////////// */
 
-/* nav{
-  width: 100vw;
-  z-index: 20;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px 0 20px;
-}
-@media (max-width:767px) {
-  nav{
-    padding: 0 20px;
-  }
-} */
 .logo-fix , .social-media-fix{
   position: fixed;
   z-index: 20;
@@ -209,17 +221,14 @@ aside{
 }
 aside .openbar{
   position: absolute;
-  right: -30px;
-  top: 50%;
-  display: grid;
-  place-content: center;
-  color: var(--secondary--);
-  background-color: var(--light--);
-  width: 30px;
-  height: 60px;
-  cursor: pointer;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+    right: -30px;
+    top: 50%;
+    display: grid;
+    place-content: center;
+    color: var(--secondary--);
+    cursor: pointer;
+    font-size: 2.5rem;
+    filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.4));
 }
 aside .closebar{
   position: absolute;
@@ -378,7 +387,21 @@ aside .aside_footer span{
 /* ///////////////////////////////// end sidebat //////////////////////////////////////// */
 
 /* ///////////////////////////////// start header //////////////////////////////////////// */
+/* header{
+  position: relative;
+}
+header #ohi{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+  filter: invert(6%) sepia(41%) saturate(5657%) hue-rotate(300deg) brightness(101%) contrast(102%) drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));;
 
+
+} */
 .cover {
   height: 100vh;
   overflow: hidden;
@@ -408,9 +431,7 @@ video#id_video {
   opacity: 0.5;
   background-color: #000;
 }
-.counter {
-  color: var(--ycolor--);
-}
+
 /* ///////////////////////////////// end header //////////////////////////////////////// */
 
 /* ///////////////////////////////// start work with us //////////////////////////////////////// */
@@ -418,13 +439,37 @@ video#id_video {
 .wwu {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   margin: 50px 0;
 }
+.wwu p {
+  max-width: 600px;
+}
 .wwu-image {
-  width: 50%;
+  width: 35%;
+  position: relative;
 }
 .wwu-image img {
+  transition: 0.3s;
+}
+.wwu-image img:nth-child(1) {
   width: 100%;
+  z-index:2;
+  position: relative;
+}
+.wwu-image img:nth-child(2) {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+#wwu_img_one:hover + #wwu_img_two {
+  filter: grayscale(0%);
+  transform: translate(-50%,-50%) scale(1.1);
 }
 @media (max-width: 767px) {
   .wwu {
@@ -441,9 +486,19 @@ video#id_video {
 
 /* ////////////////////////////////// start services /////////////////////////////////// */
 
-#services {
+#in_services {
+  background-image: linear-gradient(#ffffff00 -300%, var(--light--) 70%), url(../images/sidebar-bg.jpg);
+  background-size: cover;
+}
+.s-cont{
+  z-index: 2;
+}
+.s-cont .s-img{
+  z-index: 2;
   position: relative;
-  overflow: hidden;
+}
+.service{
+  border-radius: 1rem;
 }
 .serves-circle {
   width: 60%;
@@ -463,7 +518,23 @@ video#id_video {
   box-shadow: 0 0 10px -2px rgba(0,0,0,.4);
 }
 
-/* ////////////////////////////////// end services /////////////////////////////////// */
+/* ////////////////////////////////// end services ////////////////////////// */
+
+/* ////////////////////////////////// start counter ////////////////////////// */
+.counter {
+  color: var(--ycolor--);
+}
+.count{
+  color: var(--secondary--);
+  border-radius: 1rem;
+  background-color: var(--ycolor--);
+  padding: 10px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 10px 0;
+}
+/* ////////////////////////////////// end counter ////////////////////////// */
 
 /* //////////////////////////////// start testimonials ////////////////////// */
 
@@ -473,7 +544,7 @@ video#id_video {
   gap: 20px;
 }
 .testimonials .testmo {
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 1rem;
   border: 2px solid #f2ba35;
 }

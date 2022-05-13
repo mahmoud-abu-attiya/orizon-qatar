@@ -188,6 +188,7 @@ footer a:not(.nav-link) {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 5;
 }
 
 #scrolltop .btn {
@@ -261,6 +262,9 @@ footer a:not(.nav-link) {
 .font{
   font-size: clamp(14px , 2.5vw , 16px);
 }
+.font-head{
+  font-size: clamp(17px , 2.5vw , 20px);
+}
 @media (max-width:767px) {
   .font{
     line-height: 19px;
@@ -277,4 +281,8 @@ footer a:not(.nav-link) {
 }
 .bg-lg:hover{
   background-image: linear-gradient(45deg, #f3be32, #f3be32, yellow);
+}
+.blur{
+  backdrop-filter: blur(5px);
+  background-color: #3d052e75;
 }
