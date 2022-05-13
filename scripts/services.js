@@ -8,7 +8,7 @@ setInterval(() => {
   if (i >= 4) {
     i = 0;
   }
-}, 7000);
+}, 5000);
 
 
 let dd = document.querySelectorAll("#dd .dd")
@@ -18,7 +18,7 @@ setInterval(() => {
     d.classList.remove("change")
   });
   dd[e++].classList.add("change")
-  if(e >= 9){
+  if(e >= 8){
     e = 0;
   }
-}, 7000);
+}, 5000);
