@@ -14,6 +14,7 @@
 .zena{
   position: absolute;
   transition: 2s;
+  opacity: 0;
 }
 #content header .zena img{
   width: 100%;
@@ -65,8 +66,8 @@
     top: -10px;
   }
   #content header .z3{
-    right: 170px;
     top: 20%;
+    left: 20%;
   }
 }
 .hello{
@@ -101,4 +102,5 @@
 }
 .z-ani{
   transform: translate(0 ,0) !important;
+  opacity: 1;
 }
