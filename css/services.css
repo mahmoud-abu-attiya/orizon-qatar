@@ -72,6 +72,8 @@
   display: flex;
   gap: 20px;
   margin-bottom: 50px;
+  width: fit-content;
+  margin: auto;
 }
 .s_hello .s_hello_title .ancors a{
   background-color: var(--secondary--);
@@ -132,19 +134,23 @@
   }
 }
 /*////////////////////////////////////////////////////////////////////////*/
-.side_w_imgs{
+.side_imgs{
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  transform: rotate(10deg) translate(10%);
   width: 120%;
 }
+.side_w_imgs{
+  gap: 20px;
+  transform: rotate(10deg) translate(10%);
+}
+.side_m_imgs{
+  transform: rotate(-10deg) translate(-20%);
+}
 @media (max-width:767px) {
-  .side_w_imgs{
+  .side_imgs{
     display: none;
   }
-
 }
 
 /*////////////////////////////////////////*/
