@@ -295,7 +295,7 @@ aside .aside_info a:hover{
 }
 aside .aside_links{
   background-color: #b60e895c;
-  padding: 60px 15px;
+  padding: 20px 15px 50px;
   padding-bottom: 100px;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
@@ -450,6 +450,7 @@ video#id_video {
 .wwu-image {
   width: 35%;
   position: relative;
+  height: fit-content;
 }
 .wwu-image img {
   transition: 0.3s;
@@ -460,7 +461,7 @@ video#id_video {
   position: relative;
 }
 .wwu-image img:nth-child(2) {
-  width: 90%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -539,6 +540,7 @@ video#id_video {
 /* ////////////////////////////////// end counter ////////////////////////// */
 
 /* //////////////////////////////// start testimonials ////////////////////// */
+
 
 .testimonials {
   display: grid;

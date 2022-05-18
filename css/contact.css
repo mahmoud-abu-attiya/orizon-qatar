@@ -56,15 +56,27 @@ form.needs-validation input ,form.needs-validation select ,form.needs-validation
   flex-direction: column;
   justify-content: space-between;
   border-radius: 1rem;
+  background-image: linear-gradient(to top , var(--ycolor--), #f2b935b7), url(../images/sidebar-bg.jpg);
+  background-size: cover;
+  max-width:300px;
 }
 .anotherW .w img{
-  width: 100%;
+  width: 60%;
+  margin: auto;
+  filter: invert(80%) sepia(2%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(94%);
+  transition: 0.5s;
+  animation: floating 5s infinite;
 }
+.w:hover  .w_img{
+  filter: none;
+}
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 10px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
 @media (max-width:767px) {
-  .anotherW .w img{
-    width: 60%;
-    margin: auto;
-  }
   .anotherW{
     width: 80%;
     margin: auto;

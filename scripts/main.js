@@ -34,43 +34,6 @@
     });
   }
 
-  /**
-   * Big Picture Popup for images and videos
-   */
-  // document.querySelectorAll("[data-bigpicture]").forEach(function (e) {
-  //   e.addEventListener("click", function (t) {
-  //     t.preventDefault();
-  //     const data = JSON.parse(e.dataset.bigpicture);
-  //     BigPicture({
-  //       el: t.target,
-  //       ...data,
-  //     });
-  //   });
-  // });
-
-  /**
-   * Big Picture Popup for Photo Gallary
-   */
-  // document.querySelectorAll(".bp-gallery a").forEach(function (e) {
-  //   var caption = e.querySelector("figcaption");
-  //   var img = e.querySelector("img");
-  //   // set the link present on the item to the caption in full view
-  //   img.dataset.caption =
-  //     '<a class="link-light" target="_blank" href="' +
-  //     e.href +
-  //     '">' +
-  //     caption.innerHTML +
-  //     "</a>";
-  //   // window.console.log(caption, img)
-  //   e.addEventListener("click", function (t) {
-  //     t.preventDefault();
-  //     BigPicture({
-  //       el: t.target,
-  //       gallery: ".bp-gallery",
-  //     });
-  //   });
-  // });
-
   // scroll to top
 
   const scrollTop = document.getElementById("scrolltop");
@@ -149,53 +112,10 @@
     })
   })
 
-  // form popup
-  let fromPopup = document.querySelector(".form-popup-container")
-  let canselForm = document.querySelector(".cansel-form-popup")
-  let openForm = document.querySelectorAll(".open-form-popup")
-  let formOverlay = document.querySelector(".form-popup-overlay")
-  openForm.forEach(btn => {
-    btn.addEventListener("click",()=>{
-      fromPopup.style.display = "grid"
-    })
-  })
-  canselForm.addEventListener("click",()=>{
-    fromPopup.style.display = "none"
-  })
-  formOverlay.addEventListener("click",()=>{
-    canselForm.click()
-  })
-
   // loading
   let loading = document.querySelector(".loading")
-  let home = document.getElementById("homeLink")
-  let services = document.getElementById("servicesLink")
-  let work = document.getElementById("workLink")
-  let about = document.getElementById("aboutLink")
-  let contact = document.getElementById("contactLink")
   window.addEventListener("load", ()=>{
     loading.style.display = "none"
-
-    // console.log(window.location.pathname)
-    // if(window.location.pathname == "/"){
-    //   home.parentNode.classList.add("page-active")
-    //   console.log("we in home");
-    // } else if(window.location.pathname == "/services.html"){
-    //   services.parentNode.classList.add("page-active")
-    //   console.log("we in services");
-    // } else if(window.location.pathname == "/work.html"){
-    //   work.parentNode.classList.add("page-active")
-    //   console.log("we in work");
-    // } else if(window.location.pathname == "/about.html"){
-    //   about.parentNode.classList.add("page-active")
-    //   console.log("we in about");
-    // } else if(window.location.pathname == "/contact.html") {
-    //   contact.parentNode.classList.add("page-active")
-    //   console.log("we in contact");
-    // } else {
-    //   home.parentNode.classList.add("page-active")
-    //   console.log("we in home");
-    // }
   })
 
 })();
