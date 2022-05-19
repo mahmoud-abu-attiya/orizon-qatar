@@ -1,8 +1,3 @@
-:root {
-  --ycolor--: #f2ba35;
-  --secondary--: #3d052e;
-  --light--: #f2f2f2
-}
 /* ////////////////////// start header ///////////////////////// */
 
 header {
@@ -50,8 +45,15 @@ header img{
 .card {
   border-radius: 1rem;
   padding: 20px;
-  background-color: var(--secondary--);
+  background-image: linear-gradient(to top, #f2b935c4 , #3d052e) , url(../images/sidebar-bg.jpg);
   color: var(--light--);
+  cursor: pointer;
+}
+.card .hed{
+  display: none;
+}
+.cansel-popup{
+  display: none;
 }
 .card .img-container {
   border-radius: 1rem;
@@ -71,5 +73,89 @@ header img{
 @media (max-width:767px) {
   .card{
     padding: 10px;
+  }
+}
+/*/////////////////////////////////////*/
+.card_popup{
+  position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 20;
+    padding: 5%;
+}
+.card_popup .card{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  overflow: hidden;
+  cursor: auto;
+}
+.card_popup .cansel-popup{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--ycolor--);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  backdrop-filter: blur(1px);
+}
+.card_popup .card .img-container{
+  width: 50%;
+  height: 100%;
+  border-radius: 0;
+}
+.card_popup .card img{
+  height: 100%;
+  border-radius: 0;
+}
+.card_popup .card .card-body{
+  width: 50%;
+  padding: 20px;
+  overflow-y: auto;
+}
+.card_popup .card .card-body .hed{
+  display: block;
+}
+
+.card_popup .card .card-body::-webkit-scrollbar-track{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	border-radius: 5px;
+	background-color: transparent;
+  margin-right: 10px;
+}
+.card_popup .card .card-body::-webkit-scrollbar{
+  width: 5px;
+	background-color: transparent;
+}
+.card_popup .card .card-body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+	background-color:rgba(255, 174, 0, 0.445);
+}
+
+@media (max-width:997px) {
+  .card_popup{
+    padding: 50px 5% ;
+  }
+  .card_popup .card{
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  .card_popup .card .img-container{
+    width: 100%;
+  }
+  .card_popup .card .card-body{
+    width: 100%;
   }
 }

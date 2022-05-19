@@ -35,6 +35,10 @@
       href="./css/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/aos.css" rel="stylesheet" />
     <link href="./css/main.css?ver=1.3.0" rel="stylesheet" />
@@ -123,30 +127,9 @@
               </ul>
             </div>
           </div>
-          <div class="container">
-            <div class="aside_footer row">
-              <div class="phone col-6 col-md-3">
-                <h5>Phone:</h5>
-                <span>
-                  +0718-111-0011
-                </span>
-              </div>
-              <div class="email col-6 col-md-3">
-                <h5>Email:</h5>
-                <span>
-                  orizon@company.com
-                </span>
-              </div>
-              <div class="address col-12 col-md-6">
-                <h5>Address:</h5>
-                <span>
-                  568, Hill Road.
-                  New York, NY 50032.
-                  United States
-                </span>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="sidebar_zena">
+          <img src="images/vso3.png" alt="zena">
         </div>
       </aside>
 
@@ -215,13 +198,13 @@
 
       <header>
         <div class="zena z1">
-          <img src="images/vso3.png" alt="zena">
+          <img src="images/vso1.png" alt="zena">
         </div>
         <div class="zena z2">
-          <img src="images/vso3.png" alt="zena">
+          <img src="images/vso1.png" alt="zena">
         </div>
         <div class="zena z3">
-          <img src="images/vso3.png" alt="zena">
+          <img src="images/vso1.png" alt="zena">
         </div>
         <div class="zena z4">
           <img src="images/vso2.png" alt="zena">
@@ -245,17 +228,17 @@
           </p>
         </div>
       </header>
-      <div class="about-orizon section py-3 py-lg-5 px-2 px-lg-4">
+      <div class="about-orizon section py-5 px-2 px-lg-4 bg-light">
         <div class="container">
-          <div class="row align-items-center">
+          <h2
+            class="intro-title marker marker-center"
+            data-aos="fade-left"
+            data-aos-delay="50"
+          >
+            Welcome to <strong>ORIZON</strong>
+          </h2>
+          <div class="row">
             <div class="col-md-6">
-              <h2
-                class="intro-title marker marker-center"
-                data-aos="fade-left"
-                data-aos-delay="50"
-              >
-                Welcome to <strong>ORIZON</strong>
-              </h2>
               <p
                 class="lead fw-normal mt-4 font"
                 data-aos="fade-up"
@@ -265,46 +248,38 @@
                 level overviews. Iterative approaches to corporate strategy
                 foster collaborative thinking. Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Distinctio amet in, eius itaque
-                nesciunt dolor voluptate ad numquam blanditiis temporibus
-                veritatis vel iure id quasi voluptatum sint possimus.
-                Exercitationem, ipsa!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis rerum quasi voluptates ratione quos commodi omnis unde quibusdam iusto qui excepturi odio natus, maxime fuga optio vel! Nemo, quia.
               </p>
             </div>
             <div class="col-md-6">
               <img
-                class="pt-2 img-fluid svg-shadow"
+                class="pt-2 img-fluid rounded"
                 data-aos="fade-right"
-                src="images/company.png"
+                src="images/orizon-cover.png"
                 alt="orizon qatar"
               />
             </div>
           </div>
         </div>
       </div>
-      <div class="out-m bg-light">
+      <div class="out-m">
         <div class="container">
-          <div class="py-3 py-lg-5">
+          <div class="py-5">
             <div
               class="px-2 aos-init aos-animate"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="h3 mb-2">
+              <h3 class="mb-2">
                 Let our <strong>Agile Team</strong> understand and serve your
                 needs.
-              </div>
-              <p class="text-secondary mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur vehicula auctor ornare. Nulla non ullamcorper tellus.
-                Vestibulum pulvinar eros nec tortor maximus, iaculis rutrum nibh
-                mollis.
-              </p>
-              <div class="row">
-                <div class="col-lg-6 mb-2">
+              </h3>
+              <div class="row px-lg-5">
+                <div class="col-md-6 mb-2">
                   <div
-                    class="bd rounded px-2 shadow-sm py-2 d-flex align-items-center"
+                    class="rounded-pill px-2 shadow-sm py-2 d-flex align-items-center bg-light"
                   >
-                    <div class="badge bg-success me-2">
+                    <div class="badge bg-primary me-2">
                       <i class="fas fa-check"></i>
                     </div>
                     <div class="text-secondary fw-bold">
@@ -312,11 +287,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 mb-2">
+                <div class="col-md-6 mb-2">
                   <div
-                    class="bd rounded px-2 shadow-sm py-2 d-flex align-items-center"
+                    class="rounded-pill px-2 shadow-sm py-2 d-flex align-items-center bg-light"
                   >
-                    <div class="badge bg-success me-2">
+                    <div class="badge bg-primary me-2">
                       <i class="fas fa-check"></i>
                     </div>
                     <div class="text-secondary fw-bold">
@@ -324,11 +299,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 mb-2">
+                <div class="col-md-6 mb-2">
                   <div
-                    class="bd rounded px-2 shadow-sm py-2 d-flex align-items-center"
+                    class="rounded-pill px-2 shadow-sm py-2 d-flex align-items-center bg-light"
                   >
-                    <div class="badge bg-success me-2">
+                    <div class="badge bg-primary me-2">
                       <i class="fas fa-check"></i>
                     </div>
                     <div class="text-secondary fw-bold">
@@ -336,11 +311,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 mb-2">
+                <div class="col-md-6 mb-2">
                   <div
-                    class="bd rounded px-2 shadow-sm py-2 d-flex align-items-center"
+                    class="rounded-pill px-2 shadow-sm py-2 d-flex align-items-center bg-light"
                   >
-                    <div class="badge bg-success me-2">
+                    <div class="badge bg-primary me-2">
                       <i class="fas fa-check"></i>
                     </div>
                     <div class="text-secondary fw-bold">24x7 On-Support</div>
@@ -351,9 +326,9 @@
           </div>
         </div>
       </div>
-      <div class="section pt-5 pb-3 py-lg-5 px-2 px-lg-4" id="team">
+      <!-- <div class="section pt-5 pb-3 py-lg-5 px-2 px-lg-4" id="team">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="mb-5">
             <h2 class="marker marker-center">Meet our Team</h2>
           </div>
         </div>
@@ -569,7 +544,377 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div class="section pt-5 pb-3 py-lg-5 px-2 px-lg-4" id="team">
+        <div class="container">
+          <div class="mb-5">
+            <h2>Meet our Team</h2>
+          </div>
+          <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+          <!-- <div class="slider">
+            <div class="previwe_btn">
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="slider_container">
+              <div class="slider_content">
+                <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+                <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+                <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+                <div class="member">
+                  <div class="member_ima">
+                    <img src="images/vso1.png" alt="zena">
+                    <img src="images/team/emp-2.jpg" alt="folan" id="wwu_img_two">
+                  </div>
+                  <h6 class="member_name">mahmoud</h6>
+                  <span class="member_posi">CEO</span>
+                  <div class="nav text-light justify-content-center">
+                    <a class="nav-link text-white" href="#!" title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                      ><span class="menu-title sr-only">Twitter</span></a
+                    ><a class="nav-link text-white" href="#!" title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                      ><span class="menu-title sr-only">Facebook</span></a
+                    ><a class="nav-link text-white" href="#!" title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                      ><span class="menu-title sr-only"
+                        >Instagram</span
+                      ></a
+                    ><a class="nav-link text-white" href="#!" title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                      ><span class="menu-title sr-only">LinkedIn</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next_btn">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
       <footer class="pt-5 px-2 bg-light" id="footer">
         <div class="container">
           <div class="row">
@@ -683,6 +1028,13 @@
         </span>
       </a>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      
+    </script>
     <script src="./scripts/imagesloaded.pkgd.min.js"></script>
     <script src="./scripts/masonry.pkgd.min.js"></script>
     <script src="./scripts/BigPicture.min.js"></script>

@@ -85,70 +85,50 @@
         </a>
       </div>
     </div>
-      <!-- START SIDBAR -->
+    <!-- START SIDBAR -->
 
-      <aside>
-        <div class="openbar shadow" id="openbar">
-          <i class="fas fa-grip-lines-vertical"></i>
-        </div>
-        <div class="closebar" id="closebar">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="content">
-          <div class="head d-flex container">
-            <div class="aside_info">
-              <div class="logo">
-                <img src="images/logo/orz2.png" alt="orizon qatar">
-              </div>
-              <div class="head-word">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex non amet,
-              </div>
-              <a href="/contact.html" class="btn">Start your projects</a>
-              <div class="media">
-                <!-- <a href="#!" class="open-form-popup"><i class="fas fa-envelope"></i></a> -->
-                <a href="#!"><i class="fab fa-twitter"></i></a>
-                <a href="#!"><i class="fab fa-facebook"></i></a>
-                <a href="#!"><i class="fab fa-instagram"></i></a>
-                <a href="#!"><i class="fab fa-linkedin"></i></a>
-              </div>
+    <aside>
+      <div class="openbar shadow" id="openbar">
+        <i class="fas fa-grip-lines-vertical"></i>
+      </div>
+      <div class="closebar" id="closebar">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="content">
+        <div class="head d-flex container">
+          <div class="aside_info">
+            <div class="logo">
+              <img src="images/logo/orz2.png" alt="orizon qatar">
             </div>
-            <div class="aside_links">
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Our Work</a></li>
-                <li><a href="about.html">Company</a></li>
-                <li class="page-active"><a href="contact.html">Contact us</a></li>
-              </ul>
+            <div class="head-word">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex non amet,
+            </div>
+            <a href="/contact.html" class="btn">Start your projects</a>
+            <div class="media">
+              <a href="#!" class="open-form-popup"><i class="fas fa-envelope"></i></a>
+              <a href="#!"><i class="fab fa-twitter"></i></a>
+              <a href="#!"><i class="fab fa-facebook"></i></a>
+              <a href="#!"><i class="fab fa-instagram"></i></a>
+              <a href="#!"><i class="fab fa-linkedin"></i></a>
             </div>
           </div>
-          <div class="container">
-            <div class="aside_footer row">
-              <div class="phone col-6 col-md-3">
-                <h5>Phone:</h5>
-                <span>
-                  +0718-111-0011
-                </span>
-              </div>
-              <div class="email col-6 col-md-3">
-                <h5>Email:</h5>
-                <span>
-                  orizon@company.com
-                </span>
-              </div>
-              <div class="address col-12 col-md-6">
-                <h5>Address:</h5>
-                <span>
-                  568, Hill Road.
-                  New York, NY 50032.
-                  United States
-                </span>
-              </div>
-            </div>
+          <div class="aside_links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="work.html">Our Work</a></li>
+              <li><a href="about.html">Company</a></li>
+              <li class="page-active"><a href="contact.html">Contact us</a></li>
+            </ul>
           </div>
         </div>
-      </aside>
-  <!-- END SIDBAR -->
+      </div>
+      <div class="sidebar_zena">
+        <img src="images/vso3.png" alt="zena">
+      </div>
+    </aside>
+
+    <!-- END SIDBAR -->
     <div id="content">
       <!-- <div class="absolute ab-four"></div> -->
       <!-- <div class="absolute ab-five"></div> -->
@@ -223,29 +203,25 @@
             adipisicing elit. Reprehenderit maiores..
           </p>
         </div>
-        <form class="row g-3 needs-validation my-5 mx-auto pb-2 shadow-sm" >
-          <div class="col-md-6">
-            <label for="validationCustom01" class="form-label">Your Name</label>
-            <input type="text" name="name" class="form-control" id="validationCustom01" required />
+        <form class="row needs-validation my-4 mx-auto pb-2" >
+          <div class="col-sm-6">
+            <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Your Name" required />
           </div>
-          <div class="col-md-6">
-            <label for="validationCustomUsername" class="form-label">E-mail address</label>
+          <div class="col-sm-6">
             <div class="input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
-              <input type="email" name="email" class="form-control" id="validationCustomEmail" required />
+              <input type="email" name="email" class="form-control" id="validationCustomEmail" placeholder="E-mail address" required />
             </div>
           </div>
-          <div class="col-md-6">
-            <label for="validationCustom03" class="form-label">Company Name</label>
+          <div class="col-sm-6">
             <input
               type="text"
               name="company-name"
               class="form-control"
               id="validationCustom03"
+              placeholder="Company Name"
             />
           </div>
-          <div class="col-md-6">
-            <label for="validationCustom04" class="form-label">Service</label>
+          <div class="col-sm-6">
             <select class="form-select" id="validationCustom04" >
               <option selected disabled value="">Choose Service...</option>
               <option>Website Design & Development</option>
@@ -260,23 +236,25 @@
             </select>
           </div>
           <div class="col-12">
-            <label for="floatingTextarea2">Message</label>
             <textarea
               class="form-control"
               id="floatingTextarea2"
-              style="height: 100px"
+              style="height: 200px"
+              placeholder="Message"
             ></textarea>
           </div>
           <div class="col-12 text-center">
             <button class="btn btn-primary shadow-sm" type="submit">Send</button>
           </div>
         </form>
-        <div class="anotherW text-center">
+      </div>
+        <div class="anotherW text-center bg-light">
+          <div class="container">
           <h2 class="marker marker-center">Contact us with another ways</h2>
           <p class="mt-4 mx-auto font" style="max-width: 800px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat doloremque ipsa eveniet itaque commodi voluptate voluptates architecto</p>
           <div class="my-3 row row-cols-1 row-cols-md-3 g-3">
             <div class="col-md-4">
-              <div class="w p-3 shadow bg-light h-100" data-aos="flip-left">
+              <div class="w py-3 shadow bg-light h-100" data-aos="flip-left">
                 <img class="svg-shadow w_img" src="./images/location.png" alt="map">
                 <div class="info">
                   <h6 class="my-2">
@@ -288,7 +266,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="w p-3 shadow bg-light h-100" data-aos="flip-up">
+              <div class="w py-3 shadow bg-light h-100" data-aos="flip-up">
                 <img class="svg-shadow w_img" src="./images/callus.png" alt="call">
                 <div class="info">
                   <h6 class="my-2">
@@ -300,7 +278,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="w p-3 shadow bg-light h-100" data-aos="flip-right">
+              <div class="w py-3 shadow bg-light h-100" data-aos="flip-right">
                 <img class="svg-shadow w_img" src="./images/social-media.png" alt="social">
                 <div class="info">
                   <h6 class="my-2">
