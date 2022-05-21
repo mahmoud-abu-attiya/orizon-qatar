@@ -118,4 +118,14 @@
     loading.style.display = "none"
   })
 
+  // navbar effects
+  let navbar = document.querySelector(".nav_top")
+  window.addEventListener("scroll" , ()=>{
+    if(window.scrollY > 50){
+      navbar.classList.add("nav_not_top" , "shadow-sm")
+    }else{
+      navbar.classList.remove("nav_not_top", "shadow-sm")
+    }
+  })
+
 })();

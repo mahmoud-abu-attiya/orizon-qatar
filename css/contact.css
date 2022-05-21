@@ -25,7 +25,7 @@ form.needs-validation .col-12 {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 1rem;
-  background-image: linear-gradient(to top, var(--ycolor--), #f2b935b7), url(../images/sidebar-bg.jpg);
+  background-image: linear-gradient(to top, var(--ycolor--), #f2b935b7), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   max-width: 300px;
   margin: auto;

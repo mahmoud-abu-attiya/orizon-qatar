@@ -5,7 +5,7 @@ header {
   align-items: center;
   position: relative;
   min-height: 100vh;
-  background-image: linear-gradient( #f2b9356e ,var(--ycolor--)) , url(../images/sidebar-bg.jpg);
+  background-image: linear-gradient( #f2b9356e ,var(--ycolor--)) , url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ header img{
 .card {
   border-radius: 1rem;
   padding: 20px;
-  background-image: linear-gradient(to top, #f2b935c4 , #3d052e) , url(../images/sidebar-bg.jpg);
+  background-image: linear-gradient(to top, #f2b935c4 , #3d052e) , url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   color: var(--light--);
   cursor: pointer;
 }

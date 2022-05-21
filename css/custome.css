@@ -136,12 +136,25 @@ h1,h2,h3,h4,h5,h6{
 
 /* ////////////////////////////////// start navbar /////////////////////////////////// */
 
-.logo-fix , .social-media-fix{
+nav{
   position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
   z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  transition: 0.5s;
 }
+.nav_not_top{
+  padding: 10px 30px;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--ycolor--);
+}
+
 .logo-fix{
-  left: 3%;
   width: 20%;
   max-width: 150px;
   min-width: 50px;
@@ -218,7 +231,7 @@ aside {
   z-index: 20;
   transform: translateX(-100%);
   transition: 0.5s;
-  background-image: linear-gradient(#3d052e60 -300%, var(--secondary--) 70%), url('../images/sidebar-bg.jpg');
+  background-image: linear-gradient(#3d052e60 -300%, var(--secondary--) 70%), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   text-transform: uppercase;
 }
@@ -259,6 +272,7 @@ aside .closebar {
   font-size: clamp(30px, 2vw, 40px);
   color: var(--light--);
   cursor: pointer;
+  z-index: 4;
 }
 
 aside .content {
@@ -355,7 +369,7 @@ aside .aside_links ul .page-active a {
 aside .aside_links ul .page-active::before {
   content: '';
   position: absolute;
-  background-image: url(../images/vso1.png);
+  background-image: url("https://i.postimg.cc/Vk8jQNRj/vso1-min.png");
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -534,7 +548,7 @@ video#id_video {
 /* ////////////////////////////////// start services /////////////////////////////////// */
 
 #in_services {
-  background-image: linear-gradient(#ffffff00 -300%, var(--light--) 70%), url(../images/sidebar-bg.jpg);
+  background-image: linear-gradient(#ffffff00 -300%, var(--light--) 70%), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
 }
 .s-cont{

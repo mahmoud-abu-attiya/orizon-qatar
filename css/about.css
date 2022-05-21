@@ -101,7 +101,7 @@
 }
 /*/////////////////////////////////////////////*/
 #team{
-  background-image: linear-gradient( to bottom , #f2b935a9 , var(--ycolor--)), url(../images/sidebar-bg.jpg);
+  background-image: linear-gradient( to bottom , #f2b935a9 , var(--ycolor--)), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
