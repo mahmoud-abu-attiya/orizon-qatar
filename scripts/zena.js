@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    // when window width is >= 320px
+    // when window width is >= 997px
     997: {
       slidesPerView: 3,
       spaceBetween: 30
@@ -24,37 +24,4 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-
-let nextBtn = document.querySelector(".swiper-button-next")
-let prevBtn = document.querySelector(".swiper-button-prev")
-let sliders = document.querySelectorAll(".swiper-slide")
-let swiperWrapper = document.querySelectorAll(".swiper-wrapper")
-
-console.log(swiperWrapper.style)
-
-function removeActiveClass() {
-  sliders.forEach(slider => {
-    slider.classList.remove("slider-active")
-  })
-}
-removeActiveClass()
-
-document.querySelector(".swiper-slide-active").nextElementSibling.classList.add("slider-active")
-
-// nextBtn.addEventListener("click" , () => {
-//   removeActiveClass()
-//   addActiveClass()
-// });
-// prevBtn.addEventListener("click" , () => {
-//   removeActiveClass()
-//   addActiveClass()
-// });
-
-
-swiper.on('slideChange', function () {
-  console.log("change");
-  removeActiveClass()
-  // document.querySelector(".slider-active").nextElementSibling.classList.add("slider-active")
-  console.log("change2");
 });

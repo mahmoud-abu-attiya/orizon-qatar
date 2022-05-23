@@ -218,7 +218,7 @@ footer a:not(.nav-link) {
   transform: translateY(-2px);
 }
 
-.marker {
+/* .marker {
   position: relative;
   display: inline;
   width: auto;
@@ -254,7 +254,7 @@ footer a:not(.nav-link) {
     left: 50%;
     margin-left: -60px;
   }
-}
+} */
 
 .entry-title a {
   text-decoration: none;

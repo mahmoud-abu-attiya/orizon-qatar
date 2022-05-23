@@ -16,19 +16,18 @@ form.needs-validation .col-12 {
   margin-top: 15px;
   padding: 0 5px;
 }
-.anotherW {
+/* .anotherW {
   margin-top: 100px;
   padding: 50px 0;
-}
+} */
 .anotherW .w {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 1rem;
-  background-image: linear-gradient(to top, var(--ycolor--), #f2b935b7), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
-  background-size: cover;
-  max-width: 300px;
-  margin: auto;
+}
+.anotherW .w .info{
+  opacity: 0;
+  transition: 0.5s;
 }
 .anotherW .w img {
   width: 60%;
@@ -39,6 +38,9 @@ form.needs-validation .col-12 {
 }
 .w:hover .w_img {
   filter: none;
+}
+.w:hover .info {
+  opacity: 1;
 }
 @keyframes floating {
   0% {
@@ -72,5 +74,8 @@ form.needs-validation .col-12 {
 @media (max-width: 767px) {
   .anotherW .w img {
     filter: none;
+  }
+  .anotherW .w .info{
+    opacity: 1;
   }
 }

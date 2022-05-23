@@ -75,6 +75,26 @@
   });
 
 
+  // links hover effect
+  let links = document.querySelectorAll(".aside_links li a")
+  links.forEach( link => {
+    console.log(links[1]);
+    link.onmouseover = (e) => {
+      // console.log("hhi");
+      // console.log(e.target);
+      link.parentElement.classList.remove("page-active")
+      e.target.parentElement.classList.add("page-active")
+    }
+    link.onmouseleave = (e) => {
+      e.target.parentElement.classList.remove("page-active")
+
+    }
+    link.addEventListener("hover" , ()=>{
+      console.log("hover");
+    })
+  })
+
+
   // send email
   function formSubmit(){
     let inpName = document.querySelector("#validationCustom01")
