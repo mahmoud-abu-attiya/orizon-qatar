@@ -11,7 +11,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(126deg , var(--secondary--) ,var(--ycolor--) , transparent);
+  background-image: linear-gradient(126deg , #fff ,#fff , transparent);
   z-index: 2;
 }
 #banner .container{
@@ -90,16 +90,16 @@
   }
 }
 /*////////////////////////////////////////*/
-.production{
+.production , .adversal{
   background-image: linear-gradient(to top,var(--secondary--), #3d052ee1) , url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
 }
-.production h2{
+.production h2 , .adversal h2{
   z-index: 2;
 }
-.production .col-lg-4{
+.production .col-lg-4 , .adversal .col-md-6{
   z-index: 3;
 }
 .production .p-service{
@@ -116,7 +116,7 @@
   height: 40%;
   margin-bottom: 20px;
 }
-.production h2::before{
+.production h2::before , .adversal h2::before{
   color: #000;
   opacity: 0.5;
 }
@@ -162,11 +162,11 @@
   z-index: -1;
 }
 
-.adversal , .launch{
+/* .adversal , .launch{
   background-image: linear-gradient(var(--ycolor--), rgba(255, 255, 255, 0.7) , var(--secondary--)), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
   background-position: center;
-}
+} */
 .adversal .col-md-6 img , .social .col-md-6 img , #application .col-md-6 img , .launch .col-md-6 img{
   width: 100%;
   max-width: 500px;
