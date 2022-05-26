@@ -495,18 +495,7 @@ video#id_video {
 /* ///////////////////////////////// end header //////////////////////////////////////// */
 
 /* ///////////////////////////////// start work with us //////////////////////////////////////// */
-
-.wwu {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin: 50px 0;
-}
-.wwu p {
-  max-width: 600px;
-}
 .wwu-image {
-  width: 35%;
   position: relative;
   height: fit-content;
 }
@@ -514,7 +503,6 @@ video#id_video {
   transition: 0.3s;
 }
 .wwu-image img:nth-child(1) {
-  width: 100%;
   z-index:2;
   position: relative;
 }
@@ -534,7 +522,7 @@ video#id_video {
 }
 @media (max-width: 767px) {
   .wwu {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .wwu-image {
     width: 100%;
@@ -550,6 +538,7 @@ video#id_video {
 #in_services {
   background-image: linear-gradient(#ffffff00 -300%, var(--light--) 70%), url("https://i.postimg.cc/C5BgJm84/sidebar-bg.jpg");
   background-size: cover;
+  background-position: center;
 }
 .s-cont{
   z-index: 2;
