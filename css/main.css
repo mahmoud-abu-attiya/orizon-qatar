@@ -42,6 +42,7 @@ html {
 .nav-link {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -55,7 +56,8 @@ html {
 .nav-link:focus,
 .active .nav-link {
   color: rgba(0, 0, 0,1);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /* Hero (intro) section */
@@ -65,19 +67,23 @@ html {
 
 @-webkit-keyframes animateWave {
   0% {
-    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
   }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 @keyframes animateWave {
   0% {
-    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
   }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
@@ -139,8 +145,12 @@ img.avatar {
   width: 100%;
   padding: 12px;
   background: rgba(255, 255, 255, 0.75);
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transform: translate3d(0, 100%, 0);
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
 }
 
 .portfolio-item figcaption h4 {
@@ -159,7 +169,8 @@ img.avatar {
 }
 
 .portfolio-item:hover figcaption {
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 /* Portolio Caption */
@@ -184,6 +195,7 @@ footer a:not(.nav-link) {
   display: block;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s ease-in;
   transition: visibility 0s, opacity 0.5s ease-in;
   position: fixed;
   bottom: 20px;
@@ -211,11 +223,15 @@ footer a:not(.nav-link) {
 }
 
 .hover-effect {
+  -webkit-transition: -webkit-transform .18s ease-in-out;
+  transition: -webkit-transform .18s ease-in-out;
   transition: transform .18s ease-in-out;
+  transition: transform .18s ease-in-out, -webkit-transform .18s ease-in-out;
 }
 
 .hover-effect:hover {
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 /* .marker {
@@ -255,7 +271,9 @@ footer a:not(.nav-link) {
     margin-left: -60px;
   }
 } */
-
+.btn{
+  text-transform: capitalize;
+}
 .entry-title a {
   text-decoration: none;
 }
@@ -271,7 +289,8 @@ footer a:not(.nav-link) {
   }
 }
 .svg-shadow{
-  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
 }
 .h-font{
   font-size: clamp(18px , 2vw , 25px);
@@ -283,6 +302,7 @@ footer a:not(.nav-link) {
   background-image: linear-gradient(45deg, #f3be32, #f3be32, yellow);
 }
 .blur{
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   background-color: #3d052e75;
 }

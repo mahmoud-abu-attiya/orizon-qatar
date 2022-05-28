@@ -17,46 +17,83 @@ form.needs-validation .col-12 {
   padding: 0 5px;
 }
 .anotherW .w {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .anotherW .w .info{
   opacity: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .anotherW .w img {
   width: 60%;
   margin: auto;
-  filter: invert(80%) sepia(2%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(94%);
+  -webkit-filter: invert(80%) sepia(2%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(94%);
+          filter: invert(80%) sepia(2%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(94%);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  animation: floating 5s infinite;
+  -webkit-animation: floating 5s infinite;
+          animation: floating 5s infinite;
 }
 .w:hover .w_img {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 .w:hover .info {
   opacity: 1;
 }
-@keyframes floating {
+@-webkit-keyframes floating {
   0% {
-    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 10px);
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
   }
   100% {
-    transform: translate(0, -0px);
+    -webkit-transform: translate(0, -0px);
+            transform: translate(0, -0px);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, -0px);
+            transform: translate(0, -0px);
   }
 }
 .anotherW .w .info .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 .anotherW .w .info .social a {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 1.3rem;
   border-radius: 50%;
@@ -65,11 +102,13 @@ form.needs-validation .col-12 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .anotherW .w img {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
   .anotherW .w .info{
     opacity: 1;
